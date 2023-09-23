@@ -1,0 +1,100 @@
+:root{
+    --primary_color:#02918c;
+    --hover_color:#cfc91d;
+    --text_color:#7e8287;
+    --form_color:#0b0b0b;
+    --overlay_color:#27a19d;
+    --white_color:#ffffff;
+
+}
+*{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+.container{
+  max-width: 1320px;
+}
+/* body css end*/
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* body css end*/
+
+/* nav section css end*/
+nav{
+    background-color:var(--primary_color);
+}
+#top-nav #menu ul li a{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 800;
+    padding: 13.5px 24.5px;
+}
+#top-nav #menu ul li a:hover{
+    color: var(--hover_color);
+}
+/* nav section css end*/
+
+/* Banner section css end*/
+  #banner{
+    min-height: 70vh;
+
+    background-size: cover !important;
+    background-position: center !important;
+    position: relative;
+    z-index: 1;
+    color: var(--white_color);
+  }
+  #banner::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: -1;
+  }
+  #banner h4{
+    font-size: 30px;
+    font-weight: 400;
+  }
+  #banner h1{
+    font-size: 68px;
+    font-weight: 800;
+    height: 80%;
+    margin: 25px 0 22px 0;
+  }
+  #banner p{
+    font-size: 18px;
+    font-weight: 400;
+  }
+  #banner  img{
+    margin: 52px 0;
+  }
+  #banner a{
+    font-size: 14px;
+    font-weight: 800;
+    margin: 0 264.59px;
+    padding: 18px 49px;
+    background-color: var(--white_color);
+    color: var(--form_color);
+  }
+  #banner a:hover{
+    background-color: var(--hover_color);
+  }
+
+
+/* Banner section css end*/ 
+#service{
+
+  height: 100vh;
+  /* background-size: cover; */
+  background-position: right;
+  background-repeat: no-repeat;
+}
+#service-content{
+  width: 50%;
+  height: 100%;
+  background-color: red;
+}
